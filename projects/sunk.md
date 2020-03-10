@@ -1,5 +1,5 @@
 ---
-thumbnail: "/uploads/cody-davis-253925-unsplash.jpg"
+thumbnail: "/v1583867272/chrinas/Dining_Table_kirztv.webp"
 title: Pineapple
 date: 2019-02-06
 categories:
