@@ -1,5 +1,5 @@
 ---
-thumbnail: "/uploads/markus-spiske-516263-unsplash.jpg"
+thumbnail: chrinas/v1583867271/chrinas/Home_r4zvv9.webp
 title: Porta400
 date: 2019-01-03
 categories:
