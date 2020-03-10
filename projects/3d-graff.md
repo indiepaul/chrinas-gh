@@ -1,5 +1,5 @@
 ---
-thumbnail: "/v1583867274/chrinas/Kitchen_cfgt2y.webp"
+thumbnail: "/v1583867273/chrinas/Bedroom_3_mnixpg.webp"
 title: Ice Cream
 date: 2019-01-04
 categories:
