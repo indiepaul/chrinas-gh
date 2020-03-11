@@ -29,9 +29,9 @@ sections:
   path: data/theme.json
   label: Theme config
 upload_dir: chrinas
-public_path: ''
+public_path: https://res.cloudinary.com/skrypt/image/upload
 front_matter_path: ''
-use_front_matter_path: true
+use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: dist
