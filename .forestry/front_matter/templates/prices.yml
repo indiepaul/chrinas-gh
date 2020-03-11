@@ -1,4 +1,31 @@
 ---
 label: Prices
 hide_body: true
-fields: []
+fields:
+- name: duration
+  type: text
+  config:
+    required: true
+  label: Duration
+- name: kwacha
+  type: number
+  label: Kwacha
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+- name: pounds
+  type: number
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: false
+  label: Pounds
