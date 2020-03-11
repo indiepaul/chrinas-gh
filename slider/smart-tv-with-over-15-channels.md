@@ -1,6 +1,6 @@
 ---
 title: Smart TV With over 15 Channels
 position: 8
-image: https://res.cloudinary.com/skrypt/image/upload/c_scale,w_auto:100,dpr_auto/v1583867272/chrinas/Lounge_krhivq.webp
+image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1583867272/chrinas/Lounge_krhivq.webp
 
 ---
