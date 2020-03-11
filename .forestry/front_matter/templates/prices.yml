@@ -2,30 +2,41 @@
 label: Prices
 hide_body: true
 fields:
-- name: duration
-  type: text
-  config:
+- name: price_list
+  type: field_group_list
+  fields:
+  - name: duration
+    type: number
+    label: Duration
+    description: ''
+    default: 0
     required: true
-  label: Duration
-- name: kwacha
-  type: number
-  label: Kwacha
-  description: ''
-  default: 0
-  required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: kwacha
+    type: number
+    label: K
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: pounds
+    type: number
+    label: "£"
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
   config:
     min: 
     max: 
-    step: 
-    required: true
-- name: pounds
-  type: number
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
-    required: false
-  label: Pounds
+    labelField: 
+  label: Price List
