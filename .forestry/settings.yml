@@ -5,9 +5,8 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
-  path: prices.json
+  path: data/prices.json
   label: Prices
-  match: "**/*"
 - type: directory
   path: slider
   label: Slider
