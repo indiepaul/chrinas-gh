@@ -1,0 +1,29 @@
+{
+  "price_list": [
+    {
+      "kwacha": 105000,
+      "pounds": 105,
+      "duration": 5
+    },
+    {
+      "kwacha": 90000,
+      "pounds": 90,
+      "duration": 4
+    },
+    {
+      "kwacha": 70000,
+      "pounds": 70,
+      "duration": 3
+    },
+    {
+      "kwacha": 50000,
+      "duration": 2,
+      "pounds": 50
+    },
+    {
+      "pounds": 30,
+      "duration": 1,
+      "kwacha": 30000
+    }
+  ]
+}

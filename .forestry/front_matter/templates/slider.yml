@@ -23,15 +23,3 @@ fields:
   config:
     maxSize: 250
   label: Image
-pages:
-- slider/bedroom-1.md
-- slider/bedroom.md
-- slider/cooker.md
-- slider/dining-table.md
-- slider/home.md
-- slider/kitchen.md
-- slider/lounge-and-dining-area.md
-- slider/lounge-area.md
-- slider/separate-toilet-with-sink.md
-- slider/shared-shower-room.md
-- slider/smart-tv-with-over-15-channels.md
