@@ -22,6 +22,7 @@ fields:
       format: markdown
   label: Summary
 pages:
+- explore/airport-transfers.md
 - explore/car-wash.md
 - explore/cleaning-services.md
 - explore/free-wifi.md
