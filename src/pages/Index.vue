@@ -1,28 +1,23 @@
 <template>
   <Layout>
-    <div class="container">
-      <Hero />
-      <ProjectsGrid :projects="$page.projects.edges" />
-    </div>
-    <LatestJournals :journals="$page.journals.edges" />
+    <Slider :sliders="$page.sliders.edges"/>
+    <LatestBlogs :blogs="$page.blogs.edges"/>
   </Layout>
 </template>
 
 <page-query>
 query Posts {
-	projects: allProjectPost {
+	sliders: allSlider(sortBy: "position", order: ASC){
     edges {
       node {
         id
-        date (format: "YYYY")
+        position
         title
-        categories
-        thumbnail (quality: 90)
-        path
+        image
       }
     }
   },
-  journals: allJournalPost (perPage: 4) {
+  blogs: allBlogPost (perPage: 4) {
     edges {
       node {
         id
@@ -35,15 +30,13 @@ query Posts {
 </page-query>
 
 <script>
-import Hero from "@/components/Hero"
-import ProjectsGrid from "@/components/ProjectsGrid"
-import LatestJournals from "@/components/LatestJournals"
+import Slider from "@/components/Slider";
+import LatestBlogs from "@/components/LatestBlogs";
 
 export default {
   components: {
-    Hero,
-    ProjectsGrid,
-    LatestJournals
+    Slider,
+    LatestBlogs
   }
-}
+};
 </script>

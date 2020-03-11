@@ -1,21 +1,21 @@
 <template>
   <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
-    <Header />
+    <Header/>
     <slot/>
-    <Footer />
+    <Footer/>
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default {
   components: {
     Header,
     Footer
   }
-}
+};
 </script>
 
 
@@ -26,11 +26,13 @@ export default {
 
 body {
   --color-base: rgb(255, 255, 255);
+  --theme-color: #edd132;
   --color-base-1: rgb(243, 243, 243);
   --color-contrast: rgb(0, 0, 0);
   --color-contrast-1: rgb(43, 43, 43);
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
   padding: 0;
   font-size: 16px;
   background: var(--color-base);
@@ -54,7 +56,7 @@ h1 {
 }
 
 .layout.sticky-header {
-  padding: 6rem 0 0 0;
+  padding: 4rem 0 0 0;
 }
 
 .container {
@@ -63,6 +65,11 @@ h1 {
   padding: 0 2rem;
 }
 
+@media (max-width: 860px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
 @media (min-width: 860px) {
   .container {
     padding: 0 6rem;

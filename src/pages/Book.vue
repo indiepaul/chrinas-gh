@@ -2,9 +2,8 @@
   <Layout>
     <div class="container">
       <div class="contact-header">
-        <h1 class="contact-title">Say hi!</h1>
-        <p>If you have any questions, please contact us by telephone or email and we'll get back to you as soon as possible.</p>
-        <p>We look forward to hearing from you.</p>
+        <h1 class="contact-title">Book Now</h1>
+        <p>Leave your details and our agent will get in touch as soon as possible.</p>
       </div>
 
       <form class="contact-form" name="contact">
@@ -13,8 +12,14 @@
             <label for="name" class="label">Your name</label>
             <input type="text" name="name">
           </div>
+        </div>
+        <div class="sender-info">
           <div>
             <label for="email" class="label">Your email</label>
+            <input type="email" name="email">
+          </div>
+          <div>
+            <label for="email" class="label">Phone Number</label>
             <input type="email" name="email">
           </div>
         </div>

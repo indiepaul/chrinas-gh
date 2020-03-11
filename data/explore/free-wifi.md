@@ -1,6 +1,6 @@
 ---
 title: Free WiFi
-image: "/v1583867273/chrinas/Wifi_bfeb1o.webp"
+image: "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1583867273/chrinas/Wifi_bfeb1o.webp"
 summary: ''
 
 ---

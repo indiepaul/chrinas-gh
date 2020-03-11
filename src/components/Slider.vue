@@ -1,0 +1,61 @@
+<template>
+  <div class="sliders">
+    <carousel-3d :controls-visible="true" :display="3" :height="680" :width="1200">
+      <slide v-for="(slider, index) in sliders" :index="index" :key="index">
+        <div class="slider">
+          <g-image :src="slider.node.image" :alt="slider.node.title" class="thumbnail"/>
+          <Hero/>
+          <div class="container">
+            <h2 class="title">{{ slider.node.title }}</h2>
+          </div>
+        </div>
+      </slide>
+    </carousel-3d>
+  </div>
+</template>
+
+<style>
+.thumbnail {
+  width: 90vh;
+}
+.sliders .container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: -13rem;
+  padding: 1rem 3rem;
+  text-align: center;
+}
+.title {
+  color: var(--color-base-1);
+}
+@media (max-width: 560px) {
+  .sliders .container {
+    padding: 0.3rem 1rem;
+    top: -7em;
+  }
+}
+</style>
+
+<script>
+import { Carousel3d, Slide } from "vue-carousel-3d";
+import Hero from "@/components/Hero";
+
+export default {
+  props: {
+    sliders: {
+      type: Array,
+      required: true
+    }
+  },
+  data() {
+    return {
+      slides: 7
+    };
+  },
+  components: {
+    Hero,
+    Carousel3d,
+    Slide
+  }
+};
+</script>

@@ -5,26 +5,26 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
-  path: slider
+  path: data/slider
   label: Slider
   create: documents
   match: "**/*"
   templates:
   - slider
 - type: directory
-  path: explore
+  path: data/explore
   label: Explore
   create: documents
   match: "**/*"
   templates:
   - explore
 - type: directory
-  path: journal
-  label: Journal
+  path: data/blogs
+  label: Blogs
   create: documents
   match: "**/*.md"
   templates:
-  - journal
+  - blog
 - type: document
   path: data/theme.json
   label: Theme config

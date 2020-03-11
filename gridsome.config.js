@@ -11,8 +11,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "projects/**/*.md",
-        typeName: "ProjectPost",
+        path: "data/slider/**/*.md",
+        typeName: "Slider",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
@@ -23,8 +23,20 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "journal/**/*.md",
-        typeName: "JournalPost",
+        path: "data/blog/**/*.md",
+        typeName: "BlogPost",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "data/explore/**/*.md",
+        typeName: "ExplorePost",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
