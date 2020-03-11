@@ -30,5 +30,11 @@ fields:
 - type: boolean
   name: dark_mode
   label: Dark mode
+- name: theme_color
+  type: color
+  label: Theme Color
+  config:
+    required: false
+    color_format: Hex
 pages:
 - data/theme.json
