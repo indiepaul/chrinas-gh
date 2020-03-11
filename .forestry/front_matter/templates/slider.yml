@@ -24,5 +24,6 @@ fields:
     maxSize: 250
   label: Image
 pages:
+- slider/bedroom.md
 - slider/home.md
 - slider/lounge-and-dining-area.md
