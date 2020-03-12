@@ -6,7 +6,7 @@
         <p>Leave your details and our agent will get in touch as soon as possible.</p>
       </div>
 
-      <form class="contact-form" name="contact">
+      <form class="contact-form" method="POST" data-netlify="true">
         <div class="sender-info">
           <div>
             <label for="name" class="label">Your name</label>

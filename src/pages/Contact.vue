@@ -7,7 +7,7 @@
         <p>We look forward to hearing from you.</p>
       </div>
 
-      <form class="contact-form" name="contact">
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
         <div class="sender-info">
           <div>
             <label for="name" class="label">Your name</label>

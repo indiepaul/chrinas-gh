@@ -3,20 +3,28 @@
     <div class="container cols">
       <div class="sub">
         ADDRESS
-        <br>
-        <hr>47/1/172
+        <br>47/1/172
         <br>Area 47 Sector 1
         <br>Lilongwe, Malawi
       </div>
       <div class="sub">
         CONTACT
-        <br>
-        <hr>Email: chrinasll@gmail.com
+        <br>Email: chrinasll@gmail.com
         <br>Tel +44 7912207009
         <br>+265 999 950 095
         <br>
       </div>
-      <div class="sub">WE ACCEPT</div>
+      <div class="sub">
+        WE ACCEPT
+        <div class="cards">
+          <img
+            v-for="type in payments.payment_types"
+            :key="type.name"
+            :src="type.image"
+            :alt="type.name"
+          >
+        </div>
+      </div>
     </div>
     <hr>
     <div class="container">
@@ -29,7 +37,8 @@
 export default {
   data() {
     return {
-      settings: require("../../data/theme.json")
+      settings: require("../../data/theme.json"),
+      payments: require("../../data/payments.json")
     };
   }
 };
@@ -47,5 +56,26 @@ export default {
 }
 .sub {
   display: grid;
+}
+.cards {
+  display: flex;
+}
+.cards img {
+  height: 30px;
+  width: 65px;
+  padding: 5px;
+}
+@media (max-width: 644px) {
+  .cards img {
+    height: 14px;
+    width: 30px;
+    padding: 2px;
+  }
+  .cols {
+    display: block;
+  }
+  .sub {
+    padding: 10px;
+  }
 }
 </style>
