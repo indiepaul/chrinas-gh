@@ -1,0 +1,20 @@
+{
+  "payment_types": [
+    {
+      "name": "American Express",
+      "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1583996508/chrinas/9c608a_f8aa661f69994cfd8f73c2f6b3ea6dab_nqp7ju.webp"
+    },
+    {
+      "name": "PayPal",
+      "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1583996507/chrinas/9c608a_55d757e4d30a4c65b19478833cc18098_kucwnl.webp"
+    },
+    {
+      "name": "MasterCard",
+      "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1583996508/chrinas/9c608a_ec60bdb8eeb84835b7396cfe9fd60333_ljbmnu.webp"
+    },
+    {
+      "name": "Visa",
+      "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1583996508/chrinas/9c608a_b94d7bcdc9574085a2aa95f62a4c49e6_n8motx.webp"
+    }
+  ]
+}

@@ -20,3 +20,5 @@ fields:
     max: 
     labelField: 
   label: Payment Types
+pages:
+- data/payments.json
