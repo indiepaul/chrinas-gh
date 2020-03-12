@@ -1,6 +1,6 @@
 <template>
   <div class="sliders">
-    <carousel-3d :controls-visible="true" :display="3" :height="680" :width="1200">
+    <carousel :controls-visible="true" :display="3" :height="680" :width="1200">
       <slide v-for="(slider, index) in sliders" :index="index" :key="index">
         <div class="slider">
           <g-image :src="slider.node.image" :alt="slider.node.title" class="thumbnail"/>
@@ -10,7 +10,7 @@
           </div>
         </div>
       </slide>
-    </carousel-3d>
+    </carousel>
   </div>
 </template>
 
@@ -37,8 +37,23 @@
 </style>
 
 <script>
-import { Carousel3d, Slide } from "vue-carousel-3d";
 import Hero from "@/components/Hero";
+let Carousel3d;
+if (process.isClient) {
+  Carousel3d = require("vue-carousel-3d");
+} else {
+  let Vue = require("vue");
+  Carousel3d = {
+    Carousel3d: Vue.component("carousel-3d", {
+      props: [""],
+      template: "<div />"
+    }),
+    Slide: Vue.component("slider", {
+      props: [""],
+      template: "<div />"
+    })
+  };
+}
 
 export default {
   props: {
@@ -54,8 +69,8 @@ export default {
   },
   components: {
     Hero,
-    Carousel3d,
-    Slide
+    carousel: Carousel3d.Carousel3d,
+    slide: Carousel3d.Slide
   }
 };
 </script>
