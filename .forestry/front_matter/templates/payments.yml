@@ -2,13 +2,21 @@
 label: Payments
 hide_body: true
 fields:
-- name: name
-  type: text
+- name: payment_types
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
   config:
-    required: true
-  label: Name
-- name: image
-  type: file
-  config:
-    maxSize: 250
-  label: Image
+    min: 
+    max: 
+    labelField: 
+  label: Payment Types
