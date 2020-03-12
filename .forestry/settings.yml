@@ -7,7 +7,6 @@ sections:
 - type: document
   path: data/payment.json
   label: Payments
-  match: "**/*"
 - type: document
   path: data/prices.json
   label: Prices
@@ -26,7 +25,7 @@ sections:
   templates:
   - explore
 - type: directory
-  path: data/blogs
+  path: data/blog
   label: Blogs
   create: documents
   match: "**/*.md"
