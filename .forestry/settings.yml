@@ -5,7 +5,7 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
-  path: data/payment.json
+  path: data/payments.json
   label: Payments
 - type: document
   path: data/prices.json
