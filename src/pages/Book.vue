@@ -6,7 +6,7 @@
         <p>Leave your details and our agent will get in touch as soon as possible.</p>
       </div>
 
-      <form class="contact-form" method="POST" data-netlify="true">
+      <form class="contact-form" name="bookings" method="POST" data-netlify="true">
         <div class="sender-info">
           <div>
             <label for="name" class="label">Your name</label>
@@ -45,7 +45,7 @@
           <textarea name="message"></textarea>
         </div>
 
-        <button class="button">Submit form</button>
+        <button class="button" type="submit">Submit form</button>
       </form>
     </div>
   </Layout>
