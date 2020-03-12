@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <JournalContent :content="$page.post.content"/>
+        <BlogContent :content="$page.post.content"/>
       </div>
     </div>
   </Layout>

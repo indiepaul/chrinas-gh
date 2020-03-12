@@ -1,8 +1,5 @@
 <template>
-  <header
-    class="header"
-    :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}"
-  >
+  <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/blogs/')}">
     <div class="container">
       <div class="left">
         <g-link :to="{ name: 'home' }" class="home-link">
@@ -10,7 +7,9 @@
         </g-link>
       </div>
       <nav class="nav right">
+        <g-link class="nav__link" to="/" exact>Home</g-link>
         <g-link class="nav__link" to="/explore">Explore</g-link>
+        <g-link class="nav__link" to="/blog">News and Blogs</g-link>
         <g-link class="nav__link" to="/contact">Say Hi!</g-link>
         <g-link class="nav__link cta" to="/book">Book Now</g-link>
       </nav>
@@ -75,10 +74,10 @@ export default {
   margin: 0;
 }
 .nav > *:hover {
-  border-color: inherit;
+  border-color: var(--theme-color);
 }
 .nav > .active {
-  border-color: inherit;
+  border-color: var(--theme-color);
 }
 .cta {
   background-color: var(--theme-color);

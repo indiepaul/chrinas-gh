@@ -44,7 +44,7 @@ export default {};
   max-width: 720px;
 }
 .blog-hero {
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-align: center;
   color: var(--color-base-1);
 }

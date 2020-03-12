@@ -24,6 +24,22 @@
           </div>
         </div>
 
+        <div class="sender-info">
+          <div>
+            <label for="checkin" class="label">Check In</label>
+            <input type="date" name="checkin">
+          </div>
+          <div>
+            <label for="duration" class="label">Duration</label>
+            <select name="duration">
+              <option
+                v-for="price in prices"
+                :key="price.duration"
+              >{{price.duration}} {{price.duration == 1 ? 'Day' : 'Days'}}: K{{price.kwacha}}/£{{price.pounds}}</option>
+            </select>
+          </div>
+        </div>
+
         <div class="message">
           <label for="message" class="label">Message</label>
           <textarea name="message"></textarea>
@@ -36,7 +52,15 @@
 </template>
 
 <script>
-export default {};
+import prices from "../../data/prices.json";
+
+export default {
+  data() {
+    return {
+      prices: prices.price_list.reverse()
+    };
+  }
+};
 </script>
 
 <style scoped>
@@ -62,7 +86,7 @@ export default {};
 }
 input:focus,
 textarea:focus {
-  border-color: var(--color-contrast-1);
+  border-color: var(--theme-color);
 }
 input,
 textarea {
@@ -80,8 +104,8 @@ textarea {
   height: 140px;
 }
 .button {
-  color: var(--color-base);
-  background: var(--color-contrast);
+  color: var(--color-contrast);
+  background: var(--theme-color);
   outline: none;
   border: 0;
   font-size: 0.8rem;

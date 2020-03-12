@@ -57,7 +57,7 @@ export default {};
 }
 input:focus,
 textarea:focus {
-  border-color: var(--color-contrast-1);
+  border-color: var(--theme-color);
 }
 input,
 textarea {
@@ -75,8 +75,8 @@ textarea {
   height: 140px;
 }
 .button {
-  color: var(--color-base);
-  background: var(--color-contrast);
+  color: var(--color-contrast);
+  background: var(--theme-color);
   outline: none;
   border: 0;
   font-size: 0.8rem;
