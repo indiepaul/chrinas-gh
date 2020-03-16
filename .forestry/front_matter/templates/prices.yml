@@ -40,5 +40,10 @@ fields:
     max: 
     labelField: 
   label: Price List
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
 pages:
 - data/prices.json
