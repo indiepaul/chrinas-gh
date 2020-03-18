@@ -5,6 +5,13 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
+  path: data/house-rules
+  label: House Rules
+  create: documents
+  match: "**/*"
+  templates:
+  - house-rules
+- type: directory
   path: data/slider
   label: Slider
   create: documents
@@ -21,9 +28,6 @@ sections:
 - type: document
   path: data/prices.json
   label: Prices
-- type: document
-  path: data/house-rules.md
-  label: House Rules
 - type: document
   path: data/theme.json
   label: Theme config
