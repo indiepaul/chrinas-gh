@@ -52,3 +52,5 @@ fields:
     max: 
     labelField: 
   label: Testimonials
+pages:
+- data/home.md
