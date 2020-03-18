@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: document
-  path: data/payments.json
-  label: Payments
-- type: document
-  path: data/prices.json
-  label: Prices
 - type: directory
   path: data/slider
   label: Slider
@@ -24,13 +18,13 @@ sections:
   match: "**/*"
   templates:
   - explore
-- type: directory
-  path: data/blog
-  label: Blogs
-  create: documents
-  match: "**/*.md"
-  templates:
-  - blog
+- type: document
+  path: data/prices.json
+  label: Prices
+- type: document
+  path: data/house-rules.md
+  label: House Rules
+  match: "**/*"
 - type: document
   path: data/theme.json
   label: Theme config
