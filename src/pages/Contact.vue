@@ -18,7 +18,16 @@
         <p>Lilongwe, Malawi</p>
       </div>
 
-      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+      <form
+        class="contact-form"
+        name="contact"
+        v-on:submit.prevent="handleSubmit"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="contact">
+
         <div class="sender-info">
           <div>
             <label for="name" class="label">Your name</label>
@@ -35,14 +44,54 @@
           <textarea name="message"></textarea>
         </div>
 
-        <button class="button" type="submit">Submit form</button>
+        <button class="button" type="submit" :disabled="disable">Submit form</button>
+
+        <p>{{ status }}</p>
       </form>
     </div>
   </Layout>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      formData: {},
+      status: "",
+      disable: false
+    };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
+    },
+    handleSubmit(e) {
+      this.status = "Sending...";
+      this.disable = true;
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          "form-name": e.target.getAttribute("name"),
+          ...this.formData
+        })
+      })
+        .then(() => {
+          this.status =
+            "Thank You! Your message has been sent. We will get back to you as soon as we can";
+          this.disable = false;
+        })
+        .catch(error => {
+          this.status = "Error sending message";
+          this.disable = false;
+        });
+    }
+  }
+};
 </script>
 
 <style scoped>

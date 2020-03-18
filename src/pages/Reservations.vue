@@ -9,7 +9,15 @@
         <p>Leave your details and our agent will get in touch as soon as possible.</p>
       </div>
 
-      <form class="contact-form" name="bookings" method="POST" data-netlify="true">
+      <form
+        class="contact-form"
+        name="bookings"
+        v-on:submit.prevent="handleSubmit"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="bookings">
         <div class="sender-info">
           <div>
             <label for="name" class="label">Your name</label>
@@ -22,8 +30,8 @@
             <input type="email" name="email">
           </div>
           <div>
-            <label for="email" class="label">Phone Number</label>
-            <input type="email" name="email">
+            <label for="phone" class="label">Phone Number</label>
+            <input type="phone" name="phone">
           </div>
         </div>
 
@@ -49,10 +57,12 @@
         </div>
 
         <button class="button" type="submit">Submit form</button>
+        <p>{{ status }}</p>
       </form>
     </div>
   </Layout>
 </template>
+
 
 <script>
 import prices from "../../data/prices.json";
@@ -61,8 +71,41 @@ export default {
   data() {
     return {
       prices: prices.price_list.reverse(),
-      image: prices.image
+      image: prices.image,
+      formData: {},
+      status: "",
+      disable: false
     };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
+    },
+    handleSubmit(e) {
+      this.status = "Sending...";
+      this.disable = true;
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          "form-name": e.target.getAttribute("name"),
+          ...this.formData
+        })
+      })
+        .then(() => {
+          this.status =
+            "Thank You! Your reservation has been sent. We will get back to you as soon as we can";
+          this.disable = false;
+        })
+        .catch(error => {
+          this.status = "Error sending message";
+          this.disable = false;
+        });
+    }
   }
 };
 </script>
