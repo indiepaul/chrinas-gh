@@ -5,6 +5,10 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
+  path: data/about.md
+  label: About
+  match: "**/*"
+- type: document
   path: data/home.md
   label: Home
 - type: directory
