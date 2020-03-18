@@ -24,7 +24,6 @@ sections:
 - type: document
   path: data/house-rules.md
   label: House Rules
-  match: "**/*"
 - type: document
   path: data/theme.json
   label: Theme config
