@@ -1,4 +1,54 @@
 ---
 label: Home
 hide_body: true
-fields: []
+fields:
+- name: about_heading
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: About Heading
+- name: about_image
+  type: file
+  config:
+    maxSize: 250
+  label: About Image
+- name: cta
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: CTA
+- name: testimonial_image
+  type: file
+  config:
+    maxSize: 250
+  label: Testimonial Image
+- name: testimonials
+  type: field_group_list
+  fields:
+  - name: author
+    type: text
+    config:
+      required: false
+    label: Author
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Testimonials
