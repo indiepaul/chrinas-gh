@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .thumbnail {
   width: 90vh;
 }

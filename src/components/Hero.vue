@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .contain {
   width: 480px;
   max-width: 100%;
