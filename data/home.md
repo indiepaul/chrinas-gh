@@ -8,4 +8,6 @@ testimonials:
   body: Pristine. Ideal for travelers that love home and community atmosphere.
 
 ---
----
+***
+
+Chrina's is a quiet suburban, secured, self catering accomodation in Area 47. For your comfortable home away from home in Lilongwe, Malawi. The two bedroomed house has all kitchen amenities, 24 hour security, outside CCTV, WiFi, Power failure backup and laundry services.
