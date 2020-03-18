@@ -20,29 +20,29 @@
         <input type="hidden" name="form-name" value="bookings">
         <div class="sender-info">
           <div>
-            <label for="name" class="label">Your name</label>
-            <input type="text" name="name">
+            <label for="name" class="label">Your name *</label>
+            <input type="text" name="name" v-model="formData.name" required>
           </div>
         </div>
         <div class="sender-info">
           <div>
-            <label for="email" class="label">Your email</label>
-            <input type="email" name="email">
+            <label for="email" class="label">Your email *</label>
+            <input type="email" name="email" v-model="formData.email" required>
           </div>
           <div>
             <label for="phone" class="label">Phone Number</label>
-            <input type="phone" name="phone">
+            <input type="phone" name="phone" v-model="formData.phone">
           </div>
         </div>
 
         <div class="sender-info">
           <div>
-            <label for="checkin" class="label">Check In</label>
-            <input type="date" name="checkin">
+            <label for="checkin" class="label">Check In *</label>
+            <input type="date" name="checkin" v-model="formData.checkin" required>
           </div>
           <div>
             <label for="duration" class="label">Duration</label>
-            <select name="duration">
+            <select name="duration" v-model="formData.duration">
               <option
                 v-for="price in prices"
                 :key="price.duration"
@@ -52,10 +52,10 @@
         </div>
 
         <div class="message">
-          <label for="message" class="label">Message</label>
-          <textarea name="message"></textarea>
+          <label for="message" class="label">Message *</label>
+          <textarea name="message" v-model="formData.message" required></textarea>
         </div>
-
+        <p class="required">(Required fields *)</p>
         <button class="button" type="submit">Submit form</button>
         <p>{{ status }}</p>
       </form>
@@ -111,6 +111,10 @@ export default {
 </script>
 
 <style scoped>
+.required {
+  color: #aaa;
+  font-size: 0.8rem;
+}
 .contact-header {
   padding: 2rem 0 4rem 0;
 }

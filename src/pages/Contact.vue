@@ -30,20 +30,20 @@
 
         <div class="sender-info">
           <div>
-            <label for="name" class="label">Your name</label>
-            <input type="text" name="name">
+            <label for="name" class="label">Your name *</label>
+            <input type="text" name="name" v-model="formData.name" required>
           </div>
           <div>
-            <label for="email" class="label">Your email</label>
-            <input type="email" name="email">
+            <label for="email" class="label">Your email *</label>
+            <input type="email" name="email" v-model="formData.email" required>
           </div>
         </div>
 
         <div class="message">
-          <label for="message" class="label">Message</label>
-          <textarea name="message"></textarea>
+          <label for="message" class="label" required>Message *</label>
+          <textarea name="message" v-model="formData.message" required></textarea>
         </div>
-
+        <p class="required">(Required fields *)</p>
         <button class="button" type="submit" :disabled="disable">Submit form</button>
 
         <p>{{ status }}</p>
@@ -95,6 +95,10 @@ export default {
 </script>
 
 <style scoped>
+.required {
+  color: #aaa;
+  font-size: 0.8rem;
+}
 .contact-header {
   padding: 2rem 0 4rem 0;
 }
