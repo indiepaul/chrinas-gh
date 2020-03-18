@@ -1,4 +1,21 @@
 ---
 label: House Rules
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: field_group_list
+  fields:
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Title
