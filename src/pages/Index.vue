@@ -8,7 +8,7 @@
         <g-image :src="$page.home.testimonial_image" alt="Lounge" class="fl"/>
         <div class="excerpt">
           <div v-html="$page.home.content"></div>
-          <g-link class="button" to="/reservation">{{$page.home.cta}}...</g-link>
+          <g-link class="button" to="/reservations">{{$page.home.cta}}...</g-link>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
   </Layout>
 </template>
 
-<style>
+<style scoped>
 .quotes {
   text-align: center;
   overflow: hidden;
