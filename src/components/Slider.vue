@@ -1,10 +1,9 @@
 <template>
   <div class="sliders">
-    <carousel :controls-visible="true" :display="3" :height="680" :width="1200">
+    <carousel :controls-visible="true" :display="3" :height="500" :width="900">
       <slide v-for="(slider, index) in sliders" :index="index" :key="index">
         <div class="slider">
           <g-image :src="slider.node.image" :alt="slider.node.title" class="thumbnail"/>
-          <Hero/>
           <div class="container">
             <h2 class="title">{{ slider.node.title }}</h2>
           </div>

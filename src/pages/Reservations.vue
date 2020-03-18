@@ -1,8 +1,11 @@
 <template>
   <Layout>
     <div class="container">
+      <img :src="image" alt="Price List">
+    </div>
+    <div class="container">
       <div class="contact-header">
-        <h1 class="contact-title">Book Now</h1>
+        <h1 class="contact-title">Reservations</h1>
         <p>Leave your details and our agent will get in touch as soon as possible.</p>
       </div>
 
@@ -57,7 +60,8 @@ import prices from "../../data/prices.json";
 export default {
   data() {
     return {
-      prices: prices.price_list.reverse()
+      prices: prices.price_list.reverse(),
+      image: prices.image
     };
   }
 };

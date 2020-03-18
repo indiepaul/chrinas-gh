@@ -1,3 +1,4 @@
+
 <template>
   <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/blogs/')}">
     <div class="container">
@@ -12,10 +13,11 @@
         </a>
         <div id="links">
           <g-link class="nav__link" to="/" exact>Home</g-link>
+          <g-link class="nav__link" to="/about">About us</g-link>
+          <g-link class="nav__link cta" to="/reservations">Reservations</g-link>
           <g-link class="nav__link" to="/explore">Explore</g-link>
-          <g-link class="nav__link" to="/blog">News and Blogs</g-link>
-          <g-link class="nav__link" to="/contact">Say Hi!</g-link>
-          <g-link class="nav__link cta" to="/book">Book Now</g-link>
+          <g-link class="nav__link" to="/house-rules">House Rules</g-link>
+          <g-link class="nav__link" to="/contact">Contact Us</g-link>
         </div>
       </nav>
     </div>
@@ -48,6 +50,7 @@ export default {
   position: relative;
   height: 6rem;
   z-index: 10;
+  background-color: white;
 }
 .header.sticky {
   position: fixed;
@@ -97,12 +100,18 @@ export default {
 .cta {
   background-color: var(--theme-color);
   border-radius: 30px;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.9rem 0.5rem;
 }
 nav .toggle {
   display: none;
 }
 @media (max-width: 644px) {
+  .header.sticky {
+    position: static;
+  }
+  .layout.sticky-header {
+    padding: 0rem 0 0 0;
+  }
   #links .nav__link {
     display: block;
     width: 100vw;

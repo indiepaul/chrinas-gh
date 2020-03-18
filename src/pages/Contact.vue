@@ -2,9 +2,20 @@
   <Layout>
     <div class="container">
       <div class="contact-header">
-        <h1 class="contact-title">Say hi!</h1>
-        <p>If you have any questions, please contact us by telephone or email and we'll get back to you as soon as possible.</p>
+        <h1 class="contact-title">Contact Us</h1>
+        <p>If you have any questions, please contact us by telephone, email or fill the form below and we'll get back to you as soon as possible.</p>
         <p>We look forward to hearing from you.</p>
+        <br>
+        <p>
+          Phone:
+          <a href="tel:+265999950917">+265 886 585 999</a>
+        </p>
+        <p>
+          Email:
+          <a href="mailto:info@chrinas.com">info@chrinas.com</a>
+        </p>
+        <p>Area 47, Sector 1</p>
+        <p>Lilongwe, Malawi</p>
       </div>
 
       <form class="contact-form" name="contact" method="POST" data-netlify="true">

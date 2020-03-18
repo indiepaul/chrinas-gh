@@ -1,13 +1,13 @@
 <template>
   <Layout>
-    <Slider :sliders="$page.sliders.edges"/>
-
+    <div class="container">
+      <div class="hero">
+        <h1 class="hero-title">House Rules</h1>
+      </div>
+    </div>
     <div class="posts">
-      <div v-for="item in $page.posts.edges" :key="item.node.id" :class="selected(item.node.id)">
+      <div v-for="item in $page.rules.edges" :key="item.node.id" :class="selected(item.node.id)">
         <div class="container journal" @click="change(item)">
-          <div class="img">
-            <g-image :src="item.node.image" :alt="item.node.title" class="thumb"/>
-          </div>
           <h2 class="journal-title">{{ item.node.title }}</h2>
         </div>
       </div>
@@ -19,37 +19,21 @@
 </template>
 
 <page-query>
-query Explore {
-	posts: allExplorePost {
-    edges {
-      node {
+query Rules {
+	rules: allHouseRules(sortBy:"id", order: ASC){
+    edges{
+      node{
         id
-        image
         path
-        title
+      	title
         content
-      }
-    }
-  }
-  sliders: allSlider(sortBy: "position", order: ASC){
-    edges {
-      node {
-        id
-        position
-        title
-        image
-      }
-    }
+  		}
+		}
   }
 }
 </page-query>
-
 <script>
-import Slider from "@/components/Slider";
 export default {
-  components: {
-    Slider
-  },
   data() {
     return {
       post: {
@@ -70,10 +54,7 @@ export default {
     }
   },
   mounted() {
-    this.post = this.$page.posts.edges[0];
+    this.post = this.$page.rules.edges[0];
   }
 };
 </script>
-
-<style scoped>
-</style>
