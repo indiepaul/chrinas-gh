@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: Title
+pages:
+- data/house-rules/check-in-and-your-stay.md
