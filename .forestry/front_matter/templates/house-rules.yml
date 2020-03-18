@@ -2,27 +2,10 @@
 label: House Rules
 hide_body: false
 fields:
-- name: sections
-  type: field_group_list
-  fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: body
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Body
+- name: title
+  type: text
   config:
-    min: 
-    max: 
-    labelField: 
-  label: Sections
+    required: false
+  label: Title
 pages:
 - data/house-rules.md
