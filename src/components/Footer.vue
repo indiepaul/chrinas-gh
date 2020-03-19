@@ -17,7 +17,8 @@
     </div>
     <hr>
     <div class="container">
-      <span v-html="settings.footer"/>
+      <span v-html="settings.footer"/> -
+      <a href="https://skrypt.it" target="_blank">&lt;Skrypted /&gt;</a>
     </div>
   </footer>
 </template>
