@@ -1,4 +1,13 @@
 ---
 label: Contact Us
-hide_body: false
-fields: []
+hide_body: true
+fields:
+- name: info
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Info
