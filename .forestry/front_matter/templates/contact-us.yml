@@ -12,3 +12,5 @@ fields:
     schema:
       format: markdown
   label: Info
+pages:
+- data/contact.md
