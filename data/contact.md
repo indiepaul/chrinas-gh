@@ -4,8 +4,8 @@ info: |-
 
   We look forward to hearing from you.
 
-  Phone: +265 886 585 999
-  Email: info@chrinas.com
+  Phone: [+265 886 585 999](tel:+265999950917)
+  Email:[ ]()[info@chrinas.com](mailto:info@chrinas.com)
   Area 47, Sector 1
   Lilongwe, Malawi
 
