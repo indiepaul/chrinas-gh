@@ -1,6 +1,6 @@
 ---
-title: Shared Shower Room
+title: 'Travel cot '
 position: 10
-image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1583937046/chrinas/Bathroom_wibzk3.jpg
+image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1591745744/chrinas/IMG_6622_gqylnh.jpg
 
 ---
