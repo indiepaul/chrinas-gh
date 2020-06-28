@@ -50,39 +50,23 @@
 
         <div class="sender-info">
           <div>
-            <label for="Room" class="label">Room</label>
+            <label for="occupants" class="label">Main Room Occupants</label>
             <div>
               <input
                 type="radio"
-                name="room"
-                id="main room"
-                value="main"
-                v-model="formData.room"
+                name="occupants1"
+                value= "none"
+                v-model="formData.occupants1"
                 required
               />
-              <label for="main room">Main Room</label>
+              <label for="one">None</label>
             </div>
             <div>
               <input
                 type="radio"
-                name="room"
-                id="room two"
-                value="two"
-                v-model="formData.room"
-                required
-              />
-              <label for="room two">2nd Room</label>
-            </div>
-          </div>
-          <div>
-            <label for="occupants" class="label">Occupants</label>
-            <div>
-              <input
-                type="radio"
-                name="occupants"
-                id="one"
+                name="occupants1"
                 value="one"
-                v-model="formData.occupants"
+                v-model="formData.occupants1"
                 required
               />
               <label for="one">One</label>
@@ -90,10 +74,42 @@
             <div>
               <input
                 type="radio"
-                name="occupants"
-                id="two"
+                name="occupants1"
                 value="two"
-                v-model="formData.occupants"
+                v-model="formData.occupants1"
+                required
+              />
+              <label for="two">Two</label>
+            </div>
+          </div>
+          <div>
+            <label for="occupants" class="label">2nd Room Occupants</label>
+            <div>
+              <input
+                type="radio"
+                name="occupants2"
+                value="none"
+                v-model="formData.occupants2"
+                required
+              />
+              <label for="none">None</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="occupants2"
+                value="one"
+                v-model="formData.occupants2"
+                required
+              />
+              <label for="one">One</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="occupants2"
+                value="two"
+                v-model="formData.occupants2"
                 required
               />
               <label for="two">Two</label>
@@ -144,7 +160,9 @@
       return {
         prices: prices.price_list,
         image: prices.image,
-        formData: {},
+        formData: {
+
+        },
         status: "",
         disable: false
       };
@@ -154,19 +172,27 @@
         var formData = this.formData;
         if (
           formData &&
-          formData["room"] &&
-          formData["occupants"] &&
+          (formData["occupants1"] || formData["occupants2"]) &&
           formData["duration"]
-        )
+        ) {
+          var r1 = 0;
+          var r2 = 0;
+          if (formData["occupants1"] && formData["occupants1"] != 'none' ) {
+            r1 = this.prices[formData["duration"]][
+              "main-" + formData["occupants1"]
+            ];
+          }
+          if (formData["occupants2"] && formData["occupants2"] != 'none') {
+            r2 = this.prices[formData["duration"]][
+              "two-" + formData["occupants2"]
+            ];
+          }
           return new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "MWK",
             minimumFractionDigits: 2
-          }).format(
-            this.prices[formData["duration"]][
-              formData["room"] + "-" + formData["occupants"]
-            ]
-          );
+          }).format(r1 + r2);
+        }
         return "";
       }
     },
