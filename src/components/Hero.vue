@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" :style="{ backgroundImage: 'url(\'' +headerImg+'\')' }">
     <div class="contain">
       <h1 class="home-title" v-html="settings.hero_title"/>
       <h2 class="home-subtitle" v-html="settings.hero_subtitle"/>
@@ -9,6 +9,12 @@
 
 <script>
 export default {
+  props:{
+    headerImg: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       settings: require("../../data/theme.json")
@@ -27,7 +33,6 @@ export default {
 }
 .home {
   display: flex;
-  background-image: url("https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1583867271/chrinas/Home_r4zvv9.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

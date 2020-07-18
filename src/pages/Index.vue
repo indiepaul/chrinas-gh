@@ -1,7 +1,7 @@
 
 <template>
   <Layout>
-    <Hero/>
+    <Hero :headerImg="$page.home.testimonial_image"/>
     <div class="shade full">
       <h1 class="headline">About Chrina's</h1>
       <div class="cols">
@@ -30,7 +30,7 @@
     </div>
     <div
       class="cc full"
-      v-bind:style="{ backgroundImage: 'linear-gradient(rgba(95, 83, 20, 0.6), rgba(255, 217, 0, 0.6)), url(\'' + $page.home.testimonial_image + '\')' }"
+      :style="{ backgroundImage: 'linear-gradient(rgba(95, 83, 20, 0.6), rgba(255, 217, 0, 0.6)), url(\'' + $page.home.testimonial_image + '\')' }"
     >
       <h2 class="headline u">Testimonials</h2>
       <div class="quotes">
