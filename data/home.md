@@ -1,8 +1,8 @@
 ---
 about_heading: About Chrina's
-about_image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1591746764/chrinas/IMG_6652_1_jia1rt.jpg
+about_image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1594313536/chrinas/WhatsApp_Image_2020-06-28_at_17.08.26_vilttp.jpg
 cta: Book Your Stay
-testimonial_image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1591745242/chrinas/IMG_6652_1_ezqhvw.jpg
+testimonial_image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1594313536/chrinas/WhatsApp_Image_2020-06-28_at_17.08.26_vilttp.jpg
 testimonials:
 - author: Mzembe Chris
   body: Pristine. Ideal for travelers that love home and community atmosphere.
