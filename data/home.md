@@ -1,6 +1,6 @@
 ---
 about_heading: About Chrina's
-about_image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1594313536/chrinas/WhatsApp_Image_2020-06-28_at_17.08.26_vilttp.jpg
+about_image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1597964369/chrinas/IMG-20200819-WA0051_s72iwq.jpg
 cta: Book Your Stay
 testimonial_image: https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1594313536/chrinas/WhatsApp_Image_2020-06-28_at_17.08.26_vilttp.jpg
 testimonials:
