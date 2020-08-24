@@ -24,5 +24,6 @@ fields:
     maxSize: 250
   label: Image
 pages:
+- data/slider/garden.md
 - data/slider/kitchen.md
 - data/slider/separate-toilet-with-sink.md
