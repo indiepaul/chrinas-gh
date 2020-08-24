@@ -2,6 +2,11 @@
 label: Home
 hide_body: false
 fields:
+- name: header_image
+  type: file
+  config:
+    maxSize: 64
+  label: Header Image
 - name: about_heading
   type: textarea
   default: ''
@@ -14,7 +19,7 @@ fields:
 - name: about_image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: About Image
 - name: cta
   type: textarea
@@ -28,7 +33,7 @@ fields:
 - name: testimonial_image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: Testimonial Image
 - name: testimonials
   type: field_group_list
