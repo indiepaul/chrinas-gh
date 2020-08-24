@@ -1,11 +1,11 @@
 
 <template>
   <Layout>
-    <Hero :headerImg="$page.home.testimonial_image"/>
+    <Hero :headerImg="$page.home.header_image"/>
     <div class="shade full">
       <h1 class="headline">About Chrina's</h1>
       <div class="cols">
-        <g-image :src="$page.home.testimonial_image" alt="Lounge" class="fl"/>
+        <g-image :src="$page.home.about_image" alt="Lounge" class="fl"/>
         <div class="excerpt">
           <div v-html="$page.home.content"></div>
           <g-link class="button" to="/reservations">{{$page.home.cta}}...</g-link>
@@ -173,6 +173,7 @@ query Posts {
     }
   },
   home(path:"/data/home/"){
+    header_image
   	about_image
     about_heading
     cta
