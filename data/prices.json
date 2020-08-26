@@ -5,6 +5,66 @@
       "main-two": "234",
       "two-one": "345",
       "two-two": "356"
+    },
+    "1_days": {
+      "main_one": "35000",
+      "main-two": "46600",
+      "two-two": "11650",
+      "two-one": "17475"
+    },
+    "2_days": {
+      "main_one": "58250",
+      "main-two": "69900",
+      "two-two": "23300",
+      "two-one": "29125"
+    },
+    "3_days": {
+      "main_one": "87375",
+      "main-two": "99025",
+      "two-two": "34950",
+      "two-one": "40775"
+    },
+    "4_days": {
+      "main_one": "",
+      "main-two": "",
+      "two-two": "",
+      "two-one": ""
+    },
+    "5_days": {
+      "main_one": "",
+      "main-two": "",
+      "two-two": "",
+      "two-one": ""
+    },
+    "6_days": {
+      "main_one": "",
+      "main-two": "",
+      "two-two": "",
+      "two-one": ""
+    },
+    "7_days": {
+      "main_one": "",
+      "main-two": "",
+      "two-two": "",
+      "two-one": ""
+    },
+    "14_days": {
+      "main_one": "",
+      "main-two": "",
+      "two-two": "",
+      "two-one": ""
+    },
+    "21_days": {
+      "main_one": "",
+      "main-two": "",
+      "two-two": "",
+      "two-one": ""
+    },
+    "28_days": {
+      "main_one": "",
+      "main-two": "",
+      "two-two": "",
+      "two-one": ""
     }
   },
   "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1583937046/chrinas/Bathroom_wibzk3.jpg"
