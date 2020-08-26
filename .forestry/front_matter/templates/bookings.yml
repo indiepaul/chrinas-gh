@@ -2,23 +2,43 @@
 label: Price
 hide_body: true
 fields:
-- name: main_one
-  type: text
-  config:
-    required: false
+- name: main-one
+  type: number
   label: Main Room-One Occupants
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - name: main-two
-  type: text
-  config:
-    required: false
+  type: number
   label: Main Room-Two Occupants
-- name: two-two
-  type: text
+  description: ''
+  default: 0
+  required: true
   config:
-    required: false
-  label: Room Two-Two Occupant
+    min: 
+    max: 
+    step: 
 - name: two-one
-  type: text
-  config:
-    required: false
+  type: number
   label: Room Two-One Occupant
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: two-two
+  type: number
+  label: Room Two-Two Occupant
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
