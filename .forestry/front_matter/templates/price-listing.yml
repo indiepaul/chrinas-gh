@@ -1,0 +1,171 @@
+---
+label: Price Listing
+hide_body: true
+fields:
+- type: field_group
+  name: price_list
+  label: price_list
+  fields:
+  - type: field_group
+    name: 1_days
+    label: 1_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+  - type: field_group
+    name: 2_days
+    label: 2_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+  - type: field_group
+    name: 3_days
+    label: 3_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+  - type: field_group
+    name: 4_days
+    label: 4_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+  - type: field_group
+    name: 5_days
+    label: 5_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+  - type: field_group
+    name: 6_days
+    label: 6_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+  - type: field_group
+    name: 7_days
+    label: 7_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+  - type: field_group
+    name: 14_days
+    label: 14_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+  - type: field_group
+    name: 21_days
+    label: 21_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+  - type: field_group
+    name: 28_days
+    label: 28_days
+    fields:
+    - type: number
+      name: main-one
+      label: main-one
+    - type: number
+      name: main-two
+      label: main-two
+    - type: number
+      name: two-one
+      label: two-one
+    - type: number
+      name: two-two
+      label: two-two
+- type: text
+  name: image
+  label: image
