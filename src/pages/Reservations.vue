@@ -158,7 +158,8 @@
   export default {
     data() {
       return {
-        prices: prices.price_list,
+        prices: {},
+        plist: prices.price_list,
         image: prices.image,
         formData: {
 
@@ -166,6 +167,14 @@
         status: "",
         disable: false
       };
+    },
+    mounted() {
+      let price_list = {}
+      Object.keys(prices.price_list).forEach(function (d) {
+        const nd = d.replace('_', ' ')
+        price_list[nd] = prices.price_list[d]
+      })
+      this.prices = price_list
     },
     computed: {
       price() {
