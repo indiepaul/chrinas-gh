@@ -1,29 +1,29 @@
 ---
-label: Bookings
+label: Price
 hide_body: true
 fields:
 - name: price
   type: field_group
   config: {}
   fields:
-  - name: '11'
+  - name: main-one
     type: text
     config:
       required: false
-    label: '11'
-  - name: '12'
+    label: Main Room-One Occupant
+  - name: main-two
     type: text
     config:
       required: false
-    label: '12'
-  - name: '21'
+    label: Main Room-Two Occupants
+  - name: two-one
     type: text
     config:
       required: false
-    label: '21'
-  - name: '22'
+    label: Room Two-One Occupant
+  - name: two-two
     type: text
     config:
       required: false
-    label: '22'
+    label: Room Two-Two Occupants
   label: Price
