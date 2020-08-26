@@ -7,3 +7,5 @@ fields:
   config: {}
   template: bookings
   label: list
+pages:
+- data/prices.json

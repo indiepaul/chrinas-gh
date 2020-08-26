@@ -45,5 +45,3 @@ fields:
   config:
     maxSize: 250
   label: Image
-pages:
-- data/prices.json
