@@ -4,10 +4,10 @@
     "12": "124",
     "21": "234",
     "22": "345",
-    "main-one": "",
-    "main-two": "",
-    "two-one": "",
-    "two-two": ""
+    "main-one": "123",
+    "main-two": "2",
+    "two-one": "1",
+    "two-two": "22"
   },
   "image": ""
 }
