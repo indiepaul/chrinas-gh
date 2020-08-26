@@ -1,11 +1,56 @@
 ---
-label: Plist
+label: Price List
 hide_body: true
 fields:
-- name: list
+- name: 1_days
   type: include
   config: {}
   template: bookings
-  label: list
+  label: 1 Day
+- name: 2_days
+  type: include
+  config: {}
+  template: bookings
+  label: 2 Days
+- name: 3_days
+  type: include
+  config: {}
+  template: bookings
+  label: 3 Days
+- name: 4_days
+  type: include
+  config: {}
+  template: bookings
+  label: 4 Days
+- name: 5_days
+  type: include
+  config: {}
+  template: bookings
+  label: 5 Days
+- name: 6_days
+  type: include
+  config: {}
+  template: bookings
+  label: 6 Days
+- name: 7_days
+  type: include
+  config: {}
+  template: bookings
+  label: 7 Days
+- name: 14_days
+  type: include
+  config: {}
+  template: bookings
+  label: 14 Days
+- name: 21_days
+  type: include
+  config: {}
+  template: bookings
+  label: 21 Days
+- name: 28_days
+  type: include
+  config: {}
+  template: bookings
+  label: 28 Days
 pages:
 - data/prices.json
