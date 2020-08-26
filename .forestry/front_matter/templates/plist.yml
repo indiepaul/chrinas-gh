@@ -1,4 +1,9 @@
 ---
 label: Plist
 hide_body: true
-fields: []
+fields:
+- name: list
+  type: include
+  config: {}
+  template: bookings
+  label: list
