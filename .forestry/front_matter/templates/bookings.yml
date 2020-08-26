@@ -1,4 +1,24 @@
 ---
 label: Bookings
 hide_body: true
-fields: []
+fields:
+- name: '11'
+  type: text
+  config:
+    required: false
+  label: '11'
+- name: '12'
+  type: text
+  config:
+    required: false
+  label: '12'
+- name: '21'
+  type: text
+  config:
+    required: false
+  label: '21'
+- name: '22'
+  type: text
+  config:
+    required: false
+  label: '22'
