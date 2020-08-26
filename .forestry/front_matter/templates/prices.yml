@@ -12,3 +12,5 @@ fields:
   config: {}
   template: plist
   label: Price List
+pages:
+- data/prices.json

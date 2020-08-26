@@ -53,5 +53,3 @@ fields:
   config: {}
   template: bookings
   label: 28 Days
-pages:
-- data/prices.json
