@@ -2,46 +2,13 @@
 label: Prices
 hide_body: true
 fields:
-- name: price_list
-  type: field_group_list
-  fields:
-  - name: duration
-    type: number
-    label: Duration
-    description: ''
-    default: 0
-    required: true
-    config:
-      min: 
-      max: 
-      step: 
-  - name: kwacha
-    type: number
-    label: K
-    description: ''
-    default: 0
-    required: true
-    config:
-      min: 
-      max: 
-      step: 
-  - name: pounds
-    type: number
-    label: "£"
-    description: ''
-    default: 0
-    required: true
-    config:
-      min: 
-      max: 
-      step: 
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Price List
 - name: image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: Image
+- name: price_list
+  type: include
+  config: {}
+  template: plist
+  label: Price List
