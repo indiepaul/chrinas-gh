@@ -9,56 +9,56 @@
     "2_days": {
       "main-one": 58250,
       "main-two": 69900,
-      "two-two": 23300,
-      "two-one": 29125
+      "two-two": 29125,
+      "two-one": 23300
     },
     "3_days": {
       "main-one": 87375,
       "main-two": 99025,
-      "two-two": 34950,
-      "two-one": 40775
+      "two-two": 40775,
+      "two-one": 34950
     },
     "4_days": {
       "main-one": 106500,
       "main-two": 128150,
-      "two-two": 46600,
-      "two-one": 52425
+      "two-two": 52425,
+      "two-one": 46600
     },
     "5_days": {
       "main-one": 140625,
       "main-two": 157275,
-      "two-two": 58250,
-      "two-one": 64075
+      "two-two": 64075,
+      "two-one": 58250
     },
     "6_days": {
       "main-one": 174750,
       "main-two": 186400,
-      "two-two": 69900,
-      "two-one": 75725
+      "two-two": 75725,
+      "two-one": 69900
     },
     "7_days": {
       "main-one": 203875,
       "main-two": 215525,
-      "two-two": 81500,
-      "two-one": 87375
+      "two-two": 87375,
+      "two-one": 81500
     },
     "14_days": {
       "main-one": 349500,
       "main-two": 372800,
-      "two-two": 163100,
-      "two-one": 174750
+      "two-two": 174750,
+      "two-one": 163100
     },
     "21_days": {
       "main-one": 524250,
       "main-two": 559200,
-      "two-two": 244650,
-      "two-one": 262125
+      "two-two": 262125,
+      "two-one": 244650
     },
     "28_days": {
       "main-one": 699000,
       "main-two": 754600,
-      "two-two": 326200,
-      "two-one": 349500
+      "two-two": 349500,
+      "two-one": 326200
     }
   },
   "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1598452453/chrinas/WhatsApp_Image_2020-08-25_at_01.00.17_qbbw1w.jpg"
