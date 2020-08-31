@@ -1,8 +1,8 @@
 {
   "price_list": {
     "1_days": {
-      "main-one": 35000,
-      "main-two": 46600,
+      "main-one": 34950,
+      "main-two": 40775.0,
       "two-two": 17475,
       "two-one": 11650
     },
@@ -61,5 +61,5 @@
       "two-one": 326200
     }
   },
-  "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1598879119/chrinas/Chrina_s_prices_September_2020_jsqzw9.pdf"
+  "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1598881452/chrinas/Chrina_s_Prices_September_2020.png_ulfpgt.tiff"
 }
