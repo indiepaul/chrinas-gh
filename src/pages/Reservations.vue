@@ -55,16 +55,6 @@
               <input
                 type="radio"
                 name="occupants1"
-                value= "none"
-                v-model="formData.occupants1"
-                required
-              />
-              <label for="one">None</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="occupants1"
                 value="one"
                 v-model="formData.occupants1"
                 required
@@ -162,7 +152,8 @@
         plist: prices.price_list,
         image: prices.image,
         formData: {
-
+          occupants1: "one",
+          occupants2: "none"
         },
         status: "",
         disable: false
