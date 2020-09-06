@@ -15,8 +15,8 @@ The Wi-Fi code will be in your welcome pack located in your room
 
 **Clothes Washing**
 
-Clothes Washing and Ironing services are available at a charge. Contact host for more information.
+The property has a washing machine that can be used free of charge.  There is an iron and ironing board for guests to use.  The Housekeeper can provide ironing services at a charge. 
 
 **Washing up**
 
-Please wash up after yourself. The housekeeper can be hired to wash up at a fee. Contact host for more information
+Please wash up after yourself. The housekeeper can be hired to wash up at a fee agreeable by himself and the guest.
