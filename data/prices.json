@@ -1,16 +1,16 @@
 {
   "price_list": {
     "1_days": {
-      "main-one": 34950,
-      "main-two": 40775.0,
-      "two-two": 17475,
-      "two-one": 11650
+      "main-one": 29125.0,
+      "main-two": 34950.0,
+      "two-two": 11650.0,
+      "two-one": 8155.0
     },
     "2_days": {
-      "main-one": 62910.0,
-      "main-two": 73395.0,
-      "two-two": 31455.0,
-      "two-one": 20970.0
+      "main-one": 62910,
+      "main-two": 73395,
+      "two-two": 31455,
+      "two-one": 20970
     },
     "3_days": {
       "main-one": 89122.5,
@@ -19,10 +19,10 @@
       "two-one": 29707.5
     },
     "4_days": {
-      "main-one": 118830.0,
-      "main-two": 138635.0,
-      "two-two": 59415.0,
-      "two-one": 39610.0
+      "main-one": 118830,
+      "main-two": 138635,
+      "two-two": 59415,
+      "two-one": 39610
     },
     "5_days": {
       "main-one": 148537.5,
@@ -31,10 +31,10 @@
       "two-one": 49512.5
     },
     "6_days": {
-      "main-one": 178245.0,
+      "main-one": 178245,
       "main-two": 207952.5,
       "two-two": 89122.5,
-      "two-one": 59415.0
+      "two-one": 59415
     },
     "7_days": {
       "main-one": 207952.5,
@@ -43,23 +43,23 @@
       "two-one": 69317.5
     },
     "14_days": {
-      "main-one": 401226.0,
-      "main-two": 468097.0,
-      "two-two": 200613.0,
-      "two-one": 133742.0
+      "main-one": 401226,
+      "main-two": 468097,
+      "two-two": 200613,
+      "two-one": 133742
     },
     "21_days": {
-      "main-one": 587160.0,
-      "main-two": 685020.0,
-      "two-two": 293580.0,
-      "two-one": 195720.0
+      "main-one": 587160,
+      "main-two": 685020,
+      "two-two": 293580,
+      "two-one": 195720
     },
     "28_days": {
-      "main-one": 733950.0,
-      "main-two": 856275.0,
-      "two-two": 366975.0,
-      "two-one": 244650.0
+      "main-one": 733950,
+      "main-two": 856275,
+      "two-two": 366975,
+      "two-one": 244650
     }
   },
-  "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1598891427/chrinas/Chrina_s_Prices_Slide_September_2020_asmryf.pdf"
+  "image": "https://res.cloudinary.com/skrypt/image/upload/c_limit,w_1240,dpr_auto,f_auto/v1602709150/chrinas/Chrina_s_Prices_October_2020_slide_u0xktm.pdf"
 }
