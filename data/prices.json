@@ -1,10 +1,10 @@
 {
   "price_list": {
     "1_days": {
-      "main-one": 27377.5,
-      "main-two": 33202.5,
-      "two-two": 13397.5,
-      "two-one": 11067.5
+      "main-one": 30000.0,
+      "main-two": 35000.0,
+      "two-two": 15000.0,
+      "two-one": 10000.0
     },
     "2_days": {
       "main-one": 54755.0,
