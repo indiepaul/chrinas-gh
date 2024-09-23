@@ -1,64 +1,64 @@
 {
   "price_list": {
     "1_days": {
-      "main-one": 30000.0,
-      "main-two": 35000.0,
-      "two-two": 15000.0,
+      "main-one": 55000.0,
+      "main-two": 65000.0,
+      "two-two": 20000.0,
       "two-one": 10000.0
     },
     "2_days": {
-      "main-one": 60000.0,
-      "main-two": 70000.0,
-      "two-two": 30000.0,
+      "main-one": 110000.0,
+      "main-two": 130000.0,
+      "two-two": 40000.0,
       "two-one": 20000.0
     },
     "3_days": {
-      "main-one": 90000.0,
-      "main-two": 105000.0,
-      "two-two": 45000.0,
+      "main-one": 165000.0,
+      "main-two": 195000.0,
+      "two-two": 60000.0,
       "two-one": 30000.0
     },
     "4_days": {
-      "main-one": 120000.0,
-      "main-two": 140000.0,
-      "two-two": 60000.0,
+      "main-one": 220000.0,
+      "main-two": 260000.0,
+      "two-two": 80000.0,
       "two-one": 40000.0
     },
     "5_days": {
-      "main-one": 150000.0,
-      "main-two": 175000.0,
-      "two-two": 75000.0,
+      "main-one": 275000.0,
+      "main-two": 325000.0,
+      "two-two": 100000.0,
       "two-one": 50000.0
     },
     "6_days": {
-      "main-one": 162000.0,
-      "main-two": 189000.0,
-      "two-two": 85500.0,
+      "main-one": 313000.0,
+      "main-two": 370000.0,
+      "two-two": 11400.0,
       "two-one": 57000.0
     },
     "7_days": {
-      "main-one": 189000.0,
-      "main-two": 220500.0,
-      "two-two": 94500.0,
+      "main-one": 346000.0,
+      "main-two": 409500.0,
+      "two-two": 126000.0,
       "two-one": 63000.0
     },
     "14_days": {
-      "main-one": 357000.0,
-      "main-two": 416500.0,
-      "two-two": 172200.0,
+      "main-one": 654500.0,
+      "main-two": 773500.0,
+      "two-two": 238000.0,
       "two-one": 119000.0
     },
     "21_days": {
-      "main-one": 535500.0,
-      "main-two": 624750.0,
-      "two-two": 252000.0,
+      "main-one": 981750.0,
+      "main-two": 11602500.0,
+      "two-two": 357000.0,
       "two-one": 178500.0
     },
     "28_days": {
-      "main-one": 672000.0,
-      "main-two": 784000.0,
-      "two-two": 315000.0,
-      "two-one": 224000.0
+      "main-one": 1155000.0,
+      "main-two": 1365000.0,
+      "two-two": 420000.0,
+      "two-one": 210000.0
     }
   },
   "image": ""
